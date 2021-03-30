@@ -1,0 +1,30 @@
+PORT=5000
+FRONTEND_URL=http://domainname
+API_BASE_URL=http://domainname:5000
+
+# Database Settings
+DB_HOST=rds.us-east-1.rds.amazonaws.com
+
+
+DB_PORT=5432
+
+DB_USER=postgres
+DB_PASSWORD=password
+
+DB_NAME=postgres
+# Redis Configuarations
+
+REDIS_HOST=localhost
+REDIS_PORT=6379
+
+# Background Jobs
+ENABLE_BACKGORND_JOBS=true
+
+# Archive Settings
+ARCHIVE_ENABLED=true
+ARCHIVE_DB_HOST=rds.us-east-1.rds.amazonaws.com
+ARCHIVE_DB_PORT=5432
+ARCHIVE_DB_USER=postgres
+ARCHIVE_DB_PASSWORD=password
+ARCHIVE_DB_NAME=obitbackupdb
+ARCHIVE_STORAGE_PATH=/root/liverepo/archivedata
